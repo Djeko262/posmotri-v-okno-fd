@@ -301,17 +301,7 @@ html {
   outline: 1px solid #fff;
 }
 
-.preloader-template {
-  position: absolute;
-}
 
-.preloader {
-  position: absolute;
-}
-
-.preloader-chasing-squares {
-  position: absolute;
-}
 
 h1,
 h2,

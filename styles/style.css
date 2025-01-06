@@ -1,0 +1,358 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  block-size: 100%;
+}
+
+.page {
+  inline-size: 1200px;
+  block-size: 100%;
+  margin: auto;
+  color: #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: grid;
+  align-items: end;
+  gap: 30px;
+  grid-template-areas: "result details";
+}
+
+.result {
+  grid-area: "result";
+  margin-top: 78px;
+}
+
+.result__video-container {
+  min-width: 711px;
+  max-height: 386px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.result__video {
+  width: 100%;
+  height: 386px;
+  object-fit: cover;
+}
+
+.content__details {
+  grid-area: "details";
+  width: 100%;
+  height: 100%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: start;
+  gap: 40px;
+}
+
+.content__list-container {
+  overflow: auto;
+  height: 298px;
+  padding-top: 26px;
+  position: relative;
+}
+
+
+
+.content__list-item {
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-bottom: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  align-content: flex-start;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.search-form__fieldset-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #fff;
+}
+
+.title {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 70.5px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__video-card-title {
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 6px;
+  max-width: 196px;
+}
+
+.content__video-card-description {
+  font-family: "Fira Sans Condensed";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16.2px;
+  line-clamp: 1;
+  max-width: 196px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.search-form__label:hover {
+  text-decoration: underline 1px;
+  text-decoration-skip-ink: none;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px #fff solid;
+  outline-offset: 1px;
+}
+
+.search-form__fieldset-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #fff;
+  padding-bottom: 5px;
+}
+
+.search-form__textfield {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  border: solid 1px #fff;
+  border-right: #1b1919;
+  border-left: #1b1919;
+  min-width: 225px;
+  min-height: 27px;
+  cursor: pointer;
+}
+
+.search-form__label-text {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #fff;
+}
+
+.search-form__textfield:focus {
+  appearance: none;
+  outline: 1px #fff solid;
+  outline-offset: 1px;
+}
+
+.search-form__pseudo-checkbox {
+  border-radius: 0;
+  border: 1px #fff solid;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #fff;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px #fff solid;
+  outline-offset: 1px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  color: #fff;
+  align-self: center;
+  gap: 10px;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.more-button {
+  width: 390px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: underline 1px;
+  text-decoration-skip-ink: none;
+}
+
+.button:focus-visible {
+  outline: 1px #fff solid;
+  outline-offset: 2px;
+}
+
+.content__video-card-description-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__video-card-description-container:active {
+  background-color: #545050;
+}
+
+.content__video-card-description-container:hover {
+  text-decoration: underline 1px;
+  text-decoration-skip-ink: none;
+}
+
+.content__video-card-description-container:focus {
+  outline: none;
+}
+
+.content__video-card-description-container:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.preloader-template {
+  position: absolute;
+}
+
+.preloader {
+  position: absolute;
+}
+
+.preloader-chasing-squares {
+  position: absolute;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Кастомный скроллбар */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgb(217 217 217 / 10%);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+}

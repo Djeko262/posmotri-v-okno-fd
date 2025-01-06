@@ -68,6 +68,7 @@ html {
 .search-form {
   display: flex;
   justify-content: start;
+  position: relative;
   gap: 40px;
 }
 
@@ -102,13 +103,6 @@ html {
   flex-grow: 1;
 }
 
-.search-form__fieldset-title {
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21.6px;
-  color: #fff;
-}
 
 .title {
   font-family: Oswald, sans-serif;
@@ -154,16 +148,13 @@ html {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
+  align-items: center;
 }
 
 .search-form__fieldset {
   border: none;
 }
 
-.search-form {
-  display: flex;
-  position: relative;
-}
 
 .search-form__label {
   display: flex;
@@ -182,7 +173,7 @@ html {
 }
 
 .search-form__fieldset-title {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
@@ -245,10 +236,7 @@ html {
   outline-offset: 1px;
 }
 
-.search-form__checkbox-list {
-  display: flex;
-  align-items: center;
-}
+
 
 .button {
   background-color: transparent;

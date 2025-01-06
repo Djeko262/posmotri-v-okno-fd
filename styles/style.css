@@ -99,9 +99,7 @@ html {
   object-position: center;
 }
 
-.content__video-card-description-container {
-  flex-grow: 1;
-}
+
 
 
 .title {
@@ -167,10 +165,7 @@ html {
   text-decoration-skip-ink: none;
 }
 
-.search-form__label:has(:focus-visible) {
-  outline: 1px #fff solid;
-  outline-offset: 1px;
-}
+
 
 .search-form__fieldset-title {
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -254,9 +249,8 @@ html {
   width: 194px;
   height: 34px;
   cursor: pointer;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  margin-bottom: 0;
+  align-self: flex-end;
   justify-content: flex-end;
 }
 
@@ -283,6 +277,7 @@ html {
 .content__video-card-description-container {
   display: inline-block;
   width: 100%;
+  flex-grow: 1;
 }
 
 .content__card-link_current {

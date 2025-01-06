@@ -74,7 +74,7 @@ html {
 .content__list-container {
   overflow: auto;
   height: 298px;
-  padding-top: 26px;
+  margin-top: 26px;
   position: relative;
 }
 

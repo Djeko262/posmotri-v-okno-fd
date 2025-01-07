@@ -200,10 +200,7 @@ html {
 
 .search-form__textfield:focus {
   outline: none;
-  appearance: none;
-  outline: 1px #fff solid;
-  outline-offset: 1px;
-}
+ }
 
 .search-form__pseudo-checkbox {
   border-radius: 0;

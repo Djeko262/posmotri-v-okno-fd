@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -158,6 +177,7 @@ html {
   display: flex;
   flex-direction: row;
   width: fit-content;
+  align-items: center; 
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -278,6 +298,10 @@ html {
   background-color: #545050;
 }
 
+.content__card-link:focus {
+  outline: none;
+}
+
 .content__card-link:active {
   background-color: #545050;
 }
@@ -291,24 +315,7 @@ html {
   outline: 1px solid #fff;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
 
-ul,
-ol {
-  list-style: none;
-}
 
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {

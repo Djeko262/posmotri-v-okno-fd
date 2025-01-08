@@ -57,12 +57,14 @@ html {
   display: grid;
   align-items: end;
   gap: 30px;
+  grid-template-columns: 711px 399px;
   grid-template-areas: "result details";
 }
 
 .result {
   grid-area: "result";
   margin-top: 78px;
+  max-width: 711px;
 }
 
 .result__video-container {
